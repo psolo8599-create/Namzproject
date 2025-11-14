@@ -1,0 +1,108 @@
+/* Card */
+.card {
+  background: white;
+  padding: 28px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Title */
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+/* Subtitle */
+.subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  border: 1.7px solid #d1d5db;
+  padding: 10px 12px;
+  border-radius: 10px;
+  outline: none;
+  transition: .2s;
+  background: #f9fafb;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37,99,235,.4);
+}
+
+/* Label */
+.label {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* File input */
+.fileInput {
+  width: 100%;
+  padding: 6px;
+  border: 1.7px solid #d1d5db;
+  background: #f3f4f6;
+  border-radius: 10px;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* Download Button */
+.downloadBtn {
+  display: inline-block;
+  background: #22c55e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  transition: .2s;
+}
+
+.downloadBtn:hover {
+  background: #16a34a;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
