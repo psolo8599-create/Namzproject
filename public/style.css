@@ -1,0 +1,154 @@
+/* ======== GLOBAL ======== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======== CARD ======== */
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ======== TITLE ======== */
+.title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 22px;
+}
+
+/* ======== INPUT ======== */
+.input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.7);
+  transition: 0.25s;
+}
+
+.input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+  outline: none;
+}
+
+/* ======== FILE UPLOAD ======== */
+.file-label {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.file-input {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  background: rgba(255, 255, 255, 0.7);
+  width: 100%;
+}
+
+#preview {
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  margin: 15px auto 0 auto;
+  display: none;
+  object-fit: cover;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ======== BUTTON ======== */
+.btn {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(29, 78, 216, 0.3);
+}
+
+/* ======== RESULT ======== */
+#result {
+  margin-top: 20px;
+}
+
+#msg {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.download-btn {
+  padding: 10px 20px;
+  background: #10b981;
+  color: white;
+  border-radius: 12px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.download-btn:hover {
+  background: #059669;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3);
+}
+
+/* ======== FOOTER ======== */
+.footer {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+/* ======== ANIMATION ======== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
