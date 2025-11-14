@@ -4,7 +4,6 @@ export const config = {
 
 import formidable from "formidable";
 import fs from "fs";
-import path from "path";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
@@ -21,18 +20,10 @@ export default async function handler(req, res) {
       });
     });
 
-    const url = fields.url;
     const name = fields.name;
-    const email = fields.email;
-    const icon = files.icon?.[0];
-
-    // Log
-    console.log("DATA DITERIMA:", { url, name, email });
-    if (icon) console.log("Logo:", icon.originalFilename);
-
     const fileName = `${name.replace(/\s+/g, "_")}.apk`;
-    const fakePath = `/tmp/${fileName}`;
-    fs.writeFileSync(fakePath, "Fake APK");
+
+    fs.writeFileSync(`/tmp/${fileName}`, "FAKE APK");
 
     return res.status(200).json({
       status: true,
